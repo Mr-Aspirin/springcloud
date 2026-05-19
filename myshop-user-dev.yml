@@ -32,3 +32,6 @@ eureka:
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
+
+test:
+  message: hello-v1
