@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: myshop-web
+  zipkin:
+    base-url: http://localhost:9042
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
   boot:
     admin:
       client:

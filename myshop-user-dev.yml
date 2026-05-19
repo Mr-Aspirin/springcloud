@@ -4,6 +4,13 @@ server:
 spring:
   application:
     name: myshop-user
+  zipkin:
+    base-url: http://localhost:9042
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
   datasource:
     url: jdbc:mysql://192.168.149.134:3307/springcloud?characterEncoding=UTF8&useSSL=false
     username: root
