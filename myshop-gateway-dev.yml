@@ -4,6 +4,12 @@ server:
 spring:
   application:
     name: myshop-gateway
+  rabbitmq:
+    host: 192.168.149.134
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
   cloud:
     gateway:
       routes:
